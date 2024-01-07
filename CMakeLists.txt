@@ -1,4 +1,8 @@
-cmake_minimum_required(VERSION 3.5)
+# cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 3.0.2)
+
+
+
 
 if (POLICY CMP0091)
   cmake_policy(SET CMP0091 NEW)
@@ -27,7 +31,9 @@ else()
 endif()
 
 
-project(QtADS LANGUAGES CXX VERSION ${VERSION_SHORT})
+project(qtads LANGUAGES CXX VERSION ${VERSION_SHORT})
+
+# catkin_package()
 
 option(BUILD_STATIC "Build the static library" OFF)
 option(BUILD_EXAMPLES "Build the examples" ON)

@@ -1,0 +1,23 @@
+<package>
+  <name>qtads</name>
+  <version>0.11.0</version>
+  <description>
+     Tutorial showing how to compile your own C++ program with RViz displays and features.
+  </description>
+  <maintainer email="mabel@openrobotics.org">Mabel Zhang</maintainer>
+  <license>BSD</license>
+
+  <url>http://ros.org/wiki/librviz_tutorial</url>
+  <author>Dave Hershberger</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <run_depend>libqt5-core</run_depend>
+  <run_depend>libqt5-gui</run_depend>
+  <run_depend>libqt5-widgets</run_depend>
+  <run_depend>roscpp</run_depend>
+
+  <export>
+      <rosdoc config="${prefix}/rosdoc.yaml"/>
+  </export>
+</package>
